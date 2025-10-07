@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<!--
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Jeremy's Backend Portfolio Website</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Sidebar -->
+            <section id="sidebar">
+                <div class="inner">
+                    <div class="inner">
+                    <!-- Profile Image -->
+                    <nav>
+                        <ul>
+                            <li><a href="#intro">Welcome</a></li>
+                            <li><a href="#one">About Me</a></li>
+                            <li><a href="#two">My Projects</a></li>
+                            <li><a href="#three">Get in touch</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Intro -->
+                    <section id="intro" class="wrapper style1 fullscreen fade-up">
+                        <div class="inner">
+                            <div class="profile">
+                                <img src="images/profile.jpg" alt="Jeremy Yerimah" />
+                            </div>
+                            <h1><bold>Hi, I'm Jeremy!</bold></h1>
+                            <p>I build web applications using Flask, Django, and FastAPI. I'm a computer science student who's been schooling for 4 years and now I'm looking to enter the work force. I specialise in python backend development and hand with Python, Mysql and PostgreSQL.</p>
+                            <ul class="actions">
+                                <li><a href="#one" class="button scrolly">Learn more</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                <!-- One -->
+                    <section id="one" class="wrapper style2 spotlights">
+                        <section>
+                            <a href="#" class="image"><img src="images/flask-logo-icon.png" alt="Flask Logo" data-position="center center" /></a>
+                            <div class="content">
+                                <div class="inner">
+                                    <h2>Python Expertise</h2>
+                                    <p>I'm very proficient in Django, Flask, FastAPI specifically though I'm most comfortable with Flask. I'm also experienced in building RESTful APIs, microservices, and database-driven applications.</p>
+                                    <ul class="actions">
+                                        <li><a href="generic.html" class="button">View Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <a href="#" class="image"><img src="images/SQLAlchemy.png" alt="Database" data-position="top center" /></a>
+                            <div class="content">
+                                <div class="inner">
+                                    <h2>Database Integration</h2>
+                                    <p>I can use SQLAlchemy with PostgreSQL, MySQL, and SQLite. I can also say I'm skilled in ORM, query optimization, and data modeling.</p>
+                                    <ul class="actions">
+                                        <li><a href="generic.html" class="button">View Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <a href="#" class="image"><img src="images/rest-api-icon.png" alt="API Development" data-position="25% 25%" /></a>
+                            <div class="content">
+                                <div class="inner">
+                                    <h2>API Development</h2>
+                                    <p>I'm very skilled in building secure, scalable APIs with proper authentication, rate limiting, and documentation using tools like Swagger/OpenAPI. I actually specialise in API development</p>
+                                    <ul class="actions">
+                                        <li><a href="generic.html" class="button">View Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+                <!-- Two -->
+                    <section id="two" class="wrapper style3 fade-up">
+                        <div class="inner">
+                            <h2>My Projects</h2>
+                            <p>Here are some of my recent Python backend projects showcasing my technical skills and problem-solving abilities.</p>
+                            <div class="features">
+                                <section>
+                                    <span class="icon solid major fa-image"></span>
+                                    <h3>Image Processing API</h3>
+                                    <p>A Flask-based backend API for user-authenticated image uploads and processing. Features JWT authentication, background processing with Celery/Redis, and automatic cleanup of old files. Uses SQLAlchemy with SQLite and Pillow for image manipulation.</p>
+                                        <ul class="actions">
+                                            <li><a href="https://github.com/Yerii007/Image-Processing-API" class="button small">GitHub</a></li>
+                                            <li><a href="generic.html#image-processing" class="button small">Details</a></li>
+                                        </ul>
+                                </section>
+                                <section>
+                                    <span class="icon solid major fa-coins"></span>
+                                    <h3>Real-Time Crypto Price API</h3>
+                                    <p>A Flask REST API that fetches real-time cryptocurrency prices from CoinGecko, stores them in a database, and provides endpoints with JWT authentication. Includes caching with Flask-Caching and background updates with threading.</p>
+                                        <ul class="actions">
+                                            <li><a href="https://github.com/Yerii007/Real-Time-Crypto-Price-API" class="button small">GitHub</a></li>
+                                            <li><a href="generic.html#real-time-crypto-price" class="button small">Details</a></li>
+                                        </ul>
+                                </section>
+                                <section>
+                                    <span class="icon solid major fa-tasks"></span>
+                                    <h3>Task Manager API</h3>
+                                    <p>A Flask-based REST API with real-time notifications via WebSockets using Flask-SocketIO. Features JWT authentication, user-isolated rooms, password hashing, and rate limiting. Includes comprehensive CRUD operations for tasks with status tracking.</p>
+                                        <ul class="actions">
+                                            <li><a href="https://github.com/Yerii007/Task-Manager-API" class="button small">GitHub</a></li>
+                                            <li><a href="generic.html#task-manager" class="button small">Details</a></li>
+                                        </ul>
+                                </section>
+                                <section>
+                                    <span class="icon brands major fa-spotify"></span>
+                                    <h3>Spotify Top 5 Script</h3>
+                                    <p>A Python script using the Spotify Web API to fetch user's top 5 most-listened artists and their most popular tracks. Features OAuth2 authentication, data export to CSV/Excel, and tabulated console output using spotipy and pandas.</p>
+                                        <ul class="actions">
+                                            <li><a href="https://github.com/Yerii007/Spotify-Top-5-Script" class="button small">GitHub</a></li>
+                                            <li><a href="generic.html#spotify-top-5" class="button small">Details</a></li>
+                                        </ul>
+                                </section>
+                                <section>
+                                    <span class="icon brands major fa-spotify"></span>
+                                    <h3>Spotify Playlist Maker</h3>
+                                    <p>Automatically creates Spotify playlists from Billboard Hot 100 charts for any date. Combines web scraping for Billboard data with Spotify API integration to search and add tracks. Features .env configuration and date-based playlist creation.</p>
+                                        <ul class="actions">
+                                            <li><a href="https://github.com/Yerii007/Spotify-Playlist-Maker" class="button small">GitHub</a></li>
+                                            <li><a href="generic.html#spotify-playlist-maker" class="button small">Details</a></li>
+                                        </ul>
+                                </section>
+                            </div>
+                            <ul class="actions">
+                                <li><a href="generic.html" class="button">View All Projects</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                <!-- Three -->
+                    <section id="three" class="wrapper style1 fade-up">
+                        <div class="inner">
+                            <h2>Get in touch</h2>
+                            <p>Interested in working together? I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                            <div class="split style1">
+                                <section>
+                                    <form method="post" action="#">
+                                        <div class="fields">
+                                            <div class="field half">
+                                                <label for="name">Name</label>
+                                                <input type="text" name="name" id="name" />
+                                            </div>
+                                            <div class="field half">
+                                                <label for="email">Email</label>
+                                                <input type="text" name="email" id="email" />
+                                            </div>
+                                            <div class="field">
+                                                <label for="message">Message</label>
+                                                <textarea name="message" id="message" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="" class="button submit">Send Message</a></li>
+                                        </ul>
+                                    </form>
+                                </section>
+                                <section>
+                                    <ul class="contact">
+                                        <li>
+                                            <h3>Email</h3>
+                                            <a href="mailto:yerimahjeremy@gmail.com">yerimahjeremy@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <h3>Social</h3>
+                                            <ul class="icons">
+                                                <li><a href="https://github.com/Yerii007" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                                                <li>
+                                                    <a href="https://www.upwork.com/freelancers/~01931d6851a5d000e2?mp_source=share" 
+                                                        class="icon solid fa-briefcase">
+                                                        <span class="label">Upwork</span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="https://discord.com/users/1212852960791494687" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+
+            </div>
+
+        <!-- Footer -->
+            <footer id="footer" class="wrapper style1-alt">
+                <div class="inner">
+                    <ul class="menu">
+                        <li>&copy; Jeremy's Backend Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

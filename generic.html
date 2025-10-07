@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Projects - Jeremy's Backend Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="title">Python Backend Portfolio</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="generic.html" class="active">Projects</a></li>
+                        <li><a href="elements.html">Skills</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Main -->
+                    <section id="main" class="wrapper">
+                        <div class="inner">
+                            <h1 class="major">Featured Python Backend Projects</h1>
+                            
+                            <section class="features">
+                                <article>
+                                    <h3>Image Processing API</h3>
+                                    <span class="framework-tag flask">Flask</span>
+                                    <p><strong>Technologies:</strong> Flask, SQLAlchemy, JWT, Pillow, Celery, Redis, Flask-Migrate</p>
+                                    <p>A Flask-based backend API for user-authenticated image uploads and processing. Features JWT authentication, background processing with Celery/Redis, and automatic cleanup of old files. Uses SQLAlchemy with SQLite and Pillow for image manipulation.</p>
+                                    <ul class="actions">
+                                        <li><a href="https://github.com/Yerii007/Image-Processing-API" class="button">View on GitHub</a></li>
+                                        <li><a href="https://image-processing-api-hbb3.onrender.com" class="button primary">Live Demo</a></li>
+                                    </ul>
+                                </article>
+
+                                <article>
+                                    <h3>Real Time Crypto Price API</h3>
+                                    <span class="framework-tag flask">Flask</span>
+                                    <p><strong>Technologies:</strong> Flask, SQLAlchemy, JWT, Flask-Caching, CoinGecko API, APScheduler, Flask-Limiter</p>
+                                    <p>A Flask REST API that fetches real-time cryptocurrency prices from CoinGecko, stores them in a database, and provides endpoints with JWT authentication. Includes caching with Flask-Caching and background updates with APScheduler.</p>
+                                    <ul class="actions">
+                                        <li><a href="https://github.com/Yerii007/Real-Time-Crypto-Price-API" class="button">View on GitHub</a></li>
+                                        <li><a href="https://real-time-crypto-price-api.onrender.com" class="button primary">Live Demo</a></li>
+                                    </ul>
+                                </article>
+
+                                <article>
+                                    <h3>Task Manager API</h3>
+                                    <span class="framework-tag flask">Flask</span>
+                                    <p><strong>Technologies:</strong> Flask, SQLAlchemy, JWT, Flask-SocketIO, Bcrypt, Flask-Limiter</p>
+                                    <p>A Flask-based REST API with real-time notifications via WebSockets using Flask-SocketIO. Features JWT authentication, user-isolated rooms, password hashing, and rate limiting. Includes comprehensive CRUD operations for tasks with status tracking.</p>
+                                    <ul class="actions">
+                                        <li><a href="https://github.com/Yerii007/Task-Manager-API" class="button">View on GitHub</a></li>
+                                        <li><a href="https://task-manager-api-1-fd5m.onrender.com" class="button primary">Live Demo</a></li>
+                                    </ul>
+                                </article>
+
+                                <article>
+                                    <h3>Spotify Top 5 Script</h3>
+                                    <span class="framework-tag script">Python Script</span>
+                                    <p><strong>Technologies:</strong> Python, Spotipy, OAuth2, Pandas, Tabulate, dotenv</p>
+                                    <p>A Python script using the Spotify Web API to fetch user's top 5 most-listened artists and their most popular tracks. Features OAuth2 authentication, data export to CSV/Excel, and tabulated console output using spotipy and pandas.</p>
+                                    <ul class="actions">
+                                        <li><a href="https://github.com/Yerii007/Spotify-Top-5-Script" class="button">View on GitHub</a></li>
+                                    </ul>
+                                </article>
+
+                                <article>
+                                    <h3>Spotify Playlist Maker</h3>
+                                    <span class="framework-tag script">Python Script</span>
+                                    <p><strong>Technologies:</strong> Python, Spotipy, OAuth2, Requests, BeautifulSoup, dotenv, Pytest</p>
+                                    <p>Automatically creates Spotify playlists from Billboard Hot 100 charts for any date. Combines web scraping for Billboard data with Spotify API integration to search and add tracks. Features .env configuration and date-based playlist creation.</p>
+                                    <ul class="actions">
+                                        <li><a href="https://github.com/Yerii007/Spotify-Playlist-Maker" class="button">View on GitHub</a></li>
+                                    </ul>
+                                </article>
+                            </section>
+                        </div>
+                    </section>
+
+            </div>
+
+        <!-- Footer -->
+            <footer id="footer" class="wrapper alt">
+                <div class="inner">
+                    <ul class="menu">
+                        <li>&copy; Jeremy's Backend Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
