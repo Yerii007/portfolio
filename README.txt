@@ -1,33 +1,75 @@
-Hyperspace by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+====================================================
+JEREMY YERIMAH - BACKEND DEVELOPER PORTFOLIO WEBSITE
+====================================================
 
+📍 Overview
+------------
+This is my personal backend developer portfolio website, built using the 
+"Hyperspace" HTML5UP template and customized to reflect my projects, skills, 
+and experience as a Python backend developer.
 
-So I've had the wireframe for this particular design kicking around for some time, but with all
-the other interesting (and in some cases, semi-secret) projects I've been working on it took me
-a little while to get to actually designing and coding it. Fortunately, things have eased up
-enough for me to finaly get around to it, so I'm happy to introduce Hyperspace: a fun, blocky,
-one-page design with a lot of color, a bit of animation, and an additional "generic" page template
-(because hey, even one-page sites usually need an interior page or two). Hope you dig it :)
+The site showcases:
+- My background and expertise in Flask, Django, and FastAPI.
+- Deployed API projects with live demo links.
+- My technical skill set, tools, and frameworks.
+- Contact links for collaboration or freelance opportunities.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+🧠 Technologies Used
+---------------------
+- HTML5, CSS3, JavaScript
+- Font Awesome Icons
+- HTML5UP Hyperspace Template
+- jQuery and Scroll Scripts (from HTML5UP)
+- GitHub Pages (for hosting)
 
-(* = not included)
+📁 Project Structure
+---------------------
+portfolio/
+│
+├── index.html              → Main landing page
+├── generic.html            → Projects page
+├── elements.html           → Skills page
+│
+├── assets/
+│   ├── css/
+│   │   ├── main.css        → Main stylesheet
+│   │   ├── fontawesome-all.min.css
+│   │   └── noscript.css
+│   ├── js/
+│   │   ├── main.js         → Core scripts
+│   │   ├── util.js
+│   │   ├── browser.min.js
+│   │   └── breakpoints.min.js
+│   └── images/
+│       ├── flask-logo-icon.png
+│       ├── rest-api-icon.png
+│       ├── SQLAlchemy.png
+│       └── (other images)
+│
+└── README.txt              → This file
 
-AJ
-aj@lkn.io | @ajlkn
+🚀 Deployment
+--------------
+The website is hosted using GitHub Pages.
 
+Steps to deploy:
+1. Push the project folder to a public GitHub repository.
+2. Go to **Settings → Pages**.
+3. Under "Branch," select `main` and `/ (root)`.
+4. Save, then access the site at:
+   https://YOUR_USERNAME.github.io/portfolio/
 
-Credits:
+📞 Contact
+-----------
+- Email: yerimahjeremy@gmail.com
+- GitHub: https://github.com/Yerii007
+- Upwork: https://www.upwork.com/freelancers/~01931d6851a5d000e2
+- Discord: https://discord.com/users/1212852960791494687
 
-	Demo Images:
-		Unsplash (unsplash.com)
+🧾 License
+-----------
+Design Template: "Hyperspace" by HTML5UP  
+Free for personal and commercial use under the CCA 3.0 license  
+http://html5up.net/license
 
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+© 2025 Jeremy Yerimah. All rights reserved.
