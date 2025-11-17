@@ -52,13 +52,6 @@ portfolio/
 --------------
 The website is hosted using GitHub Pages.
 
-Steps to deploy:
-1. Push the project folder to a public GitHub repository.
-2. Go to **Settings → Pages**.
-3. Under "Branch," select `main` and `/ (root)`.
-4. Save, then access the site at:
-   https://YOUR_USERNAME.github.io/portfolio/
-
 📞 Contact
 -----------
 - Email: yerimahjeremy@gmail.com
