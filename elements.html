@@ -1,194 +1,475 @@
-<!DOCTYPE HTML>
-<!--
-    Hyperspace by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-    <head>
-        <title>Skills - Jeremy's Backend Portfolio</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical skills and expertise of Jeremy Yerimah - Python frameworks, databases, DevOps tools, and backend development capabilities.">
+    <meta name="keywords" content="Python Skills, Flask, Django, FastAPI, PostgreSQL, Docker, API Development, Backend Expertise">
+    <meta name="author" content="Jeremy Yerimah">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Technical Skills - Jeremy Yerimah">
+    <meta property="og:description" content="Comprehensive overview of backend development skills, Python frameworks, and database expertise.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <title>Technical Skills & Expertise - Jeremy Yerimah | Backend Developer</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+</head>
+<body class="is-preload">
 
-        <!-- Header -->
-            <header id="header">
-                <a href="index.html" class="title">Jeremy's Backend Portfolio</a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="generic.html">Projects</a></li>
-                        <li><a href="elements.html" class="active">Skills</a></li>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="title">Jeremy Yerimah - Backend Developer</a>
+        <nav aria-label="Page Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generic.html">Projects</a></li>
+                <li><a href="elements.html" class="active">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main Content -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">Technical Skills & Expertise</h1>
+                <p class="lead">A comprehensive overview of my technical capabilities in backend development, spanning frameworks, databases, DevOps practices, and security implementations. Each skill represents hands-on production experience and continuous professional development.</p>
+
+                <!-- Python Frameworks -->
+                <section class="skill-category">
+                    <h2>Python Web Frameworks</h2>
+                    <p class="category-description">Expert-level proficiency in Python's leading web frameworks for building scalable, maintainable backend systems.</p>
+                    
+                    <div class="features">
+                        <article>
+                            <span class="icon brands major fa-python"></span>
+                            <h3>Flask</h3>
+                            <div class="skill-level">
+                                <span class="level-badge advanced">Advanced</span>
+                                <span class="experience">2+ Years</span>
+                            </div>
+                            <p>Micro-framework expertise with deep knowledge of Flask ecosystem. Proficient in Flask-SQLAlchemy, Flask-JWT-Extended, Flask-SocketIO, Flask-Migrate, Flask-Caching, and Flask-Limiter. Experienced in building RESTful APIs, implementing authentication systems, and creating modular application architectures using Blueprints.</p>
+                            <ul class="skill-highlights">
+                                <li>Custom middleware development</li>
+                                <li>Extension integration and configuration</li>
+                                <li>Application factory pattern implementation</li>
+                                <li>Error handling and logging strategies</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon brands major fa-python"></span>
+                            <h3>Django</h3>
+                            <div class="skill-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                                <span class="experience">1-2 Years</span>
+                            </div>
+                            <p>Full-stack framework experience with Django ORM, admin interface, and built-in security features. Skilled in Django REST Framework for API development, Django signals for event-driven architecture, and Django's authentication system. Comfortable with complex model relationships and database migrations.</p>
+                            <ul class="skill-highlights">
+                                <li>Django REST Framework API development</li>
+                                <li>Custom user models and permissions</li>
+                                <li>Class-based views and generic views</li>
+                                <li>Django ORM query optimization</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon brands major fa-python"></span>
+                            <h3>FastAPI</h3>
+                            <div class="skill-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                                <span class="experience">1+ Year</span>
+                            </div>
+                            <p>Modern, high-performance framework utilizing Python type hints and automatic API documentation. Experience with Pydantic models for data validation, async/await patterns for improved concurrency, dependency injection, and automatic OpenAPI schema generation. Building production-ready APIs with impressive performance characteristics.</p>
+                            <ul class="skill-highlights">
+                                <li>Asynchronous request handling</li>
+                                <li>Pydantic schema validation</li>
+                                <li>Automatic interactive API documentation</li>
+                                <li>Background tasks and WebSocket support</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Database Technologies -->
+                <section class="skill-category">
+                    <h2>Database Technologies & Management</h2>
+                    <p class="category-description">Comprehensive experience with relational and in-memory databases, focusing on performance optimization and data integrity.</p>
+                    
+                    <div class="features">
+                        <article>
+                            <span class="icon solid major fa-database"></span>
+                            <h3>PostgreSQL</h3>
+                            <div class="skill-level">
+                                <span class="level-badge advanced">Advanced</span>
+                                <span class="experience">2+ Years</span>
+                            </div>
+                            <p>Advanced knowledge of PostgreSQL for production environments. Expertise in complex query optimization, indexing strategies (B-tree, Hash, GiST, GIN), JSONB data types, full-text search, transactions with proper isolation levels, and database performance tuning. Experienced with connection pooling and replication strategies.</p>
+                            <ul class="skill-highlights">
+                                <li>Query performance analysis and optimization</li>
+                                <li>Advanced indexing and constraint management</li>
+                                <li>Stored procedures and triggers</li>
+                                <li>Backup and recovery strategies</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon solid major fa-database"></span>
+                            <h3>MySQL</h3>
+                            <div class="skill-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                                <span class="experience">1-2 Years</span>
+                            </div>
+                            <p>Solid experience with MySQL for web applications. Knowledgeable in InnoDB storage engine, query optimization techniques, replication configuration for high availability, and performance monitoring. Comfortable with database normalization, foreign key relationships, and transaction management.</p>
+                            <ul class="skill-highlights">
+                                <li>Database schema design and normalization</li>
+                                <li>Replication and clustering</li>
+                                <li>Performance tuning and monitoring</li>
+                                <li>Backup automation and disaster recovery</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon solid major fa-database"></span>
+                            <h3>SQLite</h3>
+                            <div class="skill-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                                <span class="experience">2+ Years</span>
+                            </div>
+                            <p>Extensive experience using SQLite for development, testing, and lightweight production applications. Understanding of SQLite's transaction behavior, journal modes, and performance characteristics. Effective for rapid prototyping and embedded database requirements.</p>
+                            <ul class="skill-highlights">
+                                <li>Embedded database implementation</li>
+                                <li>SQLite-specific optimizations</li>
+                                <li>Testing database strategies</li>
+                                <li>Migration to production databases</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon solid major fa-server"></span>
+                            <h3>Redis</h3>
+                            <div class="skill-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                                <span class="experience">1+ Year</span>
+                            </div>
+                            <p>In-memory data structure store expertise for caching, session management, and message brokering. Skilled in implementing caching strategies, using Redis as a Celery broker, pub/sub messaging patterns, and data structure operations (strings, hashes, lists, sets). Understanding of persistence options and eviction policies.</p>
+                            <ul class="skill-highlights">
+                                <li>Caching strategy implementation</li>
+                                <li>Task queue management with Celery</li>
+                                <li>Pub/Sub messaging patterns</li>
+                                <li>Session storage and management</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon solid major fa-project-diagram"></span>
+                            <h3>SQLAlchemy ORM</h3>
+                            <div class="skill-level">
+                                <span class="level-badge advanced">Advanced</span>
+                                <span class="experience">2+ Years</span>
+                            </div>
+                            <p>Deep expertise in SQLAlchemy for database abstraction and ORM functionality. Proficient in declarative base models, relationship configurations (one-to-many, many-to-many), lazy/eager loading strategies, query optimization, and migration management with Alembic. Comfortable with both ORM and Core approaches.</p>
+                            <ul class="skill-highlights">
+                                <li>Complex relationship modeling</li>
+                                <li>Query optimization and eager loading</li>
+                                <li>Migration management with Alembic</li>
+                                <li>Custom types and hybrid properties</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- API Development & Security -->
+                <section class="skill-category">
+                    <h2>API Development & Security</h2>
+                    <p class="category-description">Specialized expertise in building secure, scalable, and well-documented APIs following industry best practices.</p>
+                    
+                    <div class="features">
+                        <article>
+                            <span class="icon solid major fa-code"></span>
+                            <h3>RESTful API Design</h3>
+                            <div class="skill-level">
+                                <span class="level-badge advanced">Advanced</span>
+                            </div>
+                            <p>Expert in designing and implementing RESTful web services adhering to REST principles. Proficient in resource-oriented design, proper HTTP method usage (GET, POST, PUT, PATCH, DELETE), status code selection, versioning strategies, HATEOAS concepts, and pagination implementation for large datasets.</p>
+                            <ul class="skill-highlights">
+                                <li>Resource modeling and endpoint design</li>
+                                <li>HTTP status code implementation</li>
+                                <li>API versioning strategies</li>
+                                <li>Pagination and filtering patterns</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon solid major fa-lock"></span>
+                            <h3>Authentication & Authorization</h3>
+                            <div class="skill-level">
+                                <span class="level-badge advanced">Advanced</span>
+                            </div>
+                            <p>Comprehensive security implementation experience. Skilled in JWT (JSON Web Tokens) for stateless authentication, OAuth2 flows for third-party authorization, secure password hashing with bcrypt, role-based access control (RBAC), and token refresh mechanisms. Focus on implementing security best practices throughout the application lifecycle.</p>
+                            <ul class="skill-highlights">
+                                <li>JWT token generation and validation</li>
+                                <li>OAuth2 integration (Google, GitHub, Spotify)</li>
+                                <li>Role-based access control systems</li>
+                                <li>Secure password storage with bcrypt/Argon2</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon solid major fa-book"></span>
+                            <h3>API Documentation</h3>
+                            <div class="skill-level">
+                                <span class="level-badge advanced">Advanced</span>
+                            </div>
+                            <p>Creating comprehensive, developer-friendly API documentation using OpenAPI/Swagger specifications. Experience with automated documentation generation, interactive API explorers, schema definitions, and maintaining up-to-date documentation. Understanding the importance of clear documentation for API adoption and maintenance.</p>
+                            <ul class="skill-highlights">
+                                <li>OpenAPI/Swagger specification</li>
+                                <li>Interactive documentation interfaces</li>
+                                <li>Schema validation and examples</li>
+                                <li>Postman collection generation</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon solid major fa-shield-alt"></span>
+                            <h3>API Security & Rate Limiting</h3>
+                            <div class="skill-level">
+                                <span class="level-badge advanced">Advanced</span>
+                            </div>
+                            <p>Implementation of comprehensive security measures including rate limiting, request throttling, CORS configuration, input validation, SQL injection prevention, XSS protection, and HTTPS enforcement. Experience with Flask-Limiter and custom middleware for protecting API endpoints from abuse.</p>
+                            <ul class="skill-highlights">
+                                <li>Rate limiting and throttling strategies</li>
+                                <li>CORS policy configuration</li>
+                                <li>Input validation and sanitization</li>
+                                <li>Security headers implementation</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- DevOps & Tools -->
+                <section class="skill-category">
+                    <h2>DevOps & Development Tools</h2>
+                    <p class="category-description">Modern development practices, containerization, version control, and automated testing for reliable software delivery.</p>
+                    
+                    <div class="features">
+                        <article>
+                            <span class="icon brands major fa-docker"></span>
+                            <h3>Docker & Containerization</h3>
+                            <div class="skill-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                                <span class="experience">1+ Year</span>
+                            </div>
+                            <p>Proficient in containerizing Python applications using Docker. Experience writing efficient Dockerfiles, multi-stage builds for optimized images, docker-compose for multi-container applications, volume management, and networking. Understanding of container orchestration basics and deployment strategies.</p>
+                            <ul class="skill-highlights">
+                                <li>Multi-stage Docker builds</li>
+                                <li>Docker Compose orchestration</li>
+                                <li>Container optimization techniques</li>
+                                <li>Development and production configurations</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon brands major fa-git-alt"></span>
+                            <h3>Git & Version Control</h3>
+                            <div class="skill-level">
+                                <span class="level-badge advanced">Advanced</span>
+                                <span class="experience">3+ Years</span>
+                            </div>
+                            <p>Expert-level Git proficiency with comprehensive workflow experience. Skilled in branching strategies (Git Flow, GitHub Flow), merge conflict resolution, rebasing, cherry-picking, and collaborative development. Comfortable with GitHub for repository hosting, pull requests, code reviews, and CI/CD integration.</p>
+                            <ul class="skill-highlights">
+                                <li>Branching and merging strategies</li>
+                                <li>Collaborative workflows and code reviews</li>
+                                <li>Git history management and rewriting</li>
+                                <li>GitHub Actions and automation</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon solid major fa-tasks"></span>
+                            <h3>Celery & Background Tasks</h3>
+                            <div class="skill-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                                <span class="experience">1+ Year</span>
+                            </div>
+                            <p>Asynchronous task queue implementation using Celery with Redis/RabbitMQ as message brokers. Experience in designing background job processing, scheduled tasks with Celery Beat, task monitoring, error handling, and retry mechanisms. Essential for improving application responsiveness and handling long-running operations.</p>
+                            <ul class="skill-highlights">
+                                <li>Asynchronous task processing</li>
+                                <li>Scheduled task automation</li>
+                                <li>Task monitoring and error handling</li>
+                                <li>Worker scaling and management</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon solid major fa-vial"></span>
+                            <h3>Testing & Quality Assurance</h3>
+                            <div class="skill-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                                <span class="experience">1+ Year</span>
+                            </div>
+                            <p>Comprehensive testing approach using pytest framework. Experienced in unit testing, integration testing, test fixtures, mocking external dependencies, test coverage analysis, and test-driven development (TDD) principles. Understanding the importance of maintaining high code quality through automated testing.</p>
+                            <ul class="skill-highlights">
+                                <li>Unit and integration testing with pytest</li>
+                                <li>Test fixtures and factories</li>
+                                <li>Mocking and dependency injection</li>
+                                <li>Test coverage and continuous integration</li>
+                            </ul>
+                        </article>
+                        
+                        <article>
+                            <span class="icon solid major fa-terminal"></span>
+                            <h3>Development Environment</h3>
+                            <div class="skill-level">
+                                <span class="level-badge advanced">Advanced</span>
+                            </div>
+                            <p>Proficient in Linux/Unix environments, command-line tools, shell scripting, and development workflows. Experienced with virtual environments (venv, virtualenv), dependency management (pip, poetry), environment variable configuration, and IDE setup (VS Code, PyCharm) for optimal productivity.</p>
+                            <ul class="skill-highlights">
+                                <li>Linux/Unix command-line proficiency</li>
+                                <li>Virtual environment management</li>
+                                <li>Shell scripting and automation</li>
+                                <li>Development tool configuration</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Experience Overview Table -->
+                <section class="skill-category">
+                    <h2>Skills Overview & Experience Timeline</h2>
+                    <p class="category-description">Quantified summary of core competencies with corresponding experience levels and durations.</p>
+                    
+                    <div class="table-wrapper">
+                        <table class="alt">
+                            <thead>
+                                <tr>
+                                    <th>Technology/Skill</th>
+                                    <th>Proficiency Level</th>
+                                    <th>Years of Experience</th>
+                                    <th>Primary Use Cases</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Python</strong></td>
+                                    <td><span class="level-badge advanced">Advanced</span></td>
+                                    <td>3+ Years</td>
+                                    <td>Backend Development, Scripting, Automation</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Flask</strong></td>
+                                    <td><span class="level-badge advanced">Advanced</span></td>
+                                    <td>2+ Years</td>
+                                    <td>API Development, Microservices</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Django</strong></td>
+                                    <td><span class="level-badge intermediate">Intermediate</span></td>
+                                    <td>1-2 Years</td>
+                                    <td>Full-Stack Applications, REST APIs</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>FastAPI</strong></td>
+                                    <td><span class="level-badge intermediate">Intermediate</span></td>
+                                    <td>1+ Year</td>
+                                    <td>High-Performance APIs, Async Operations</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PostgreSQL</strong></td>
+                                    <td><span class="level-badge advanced">Advanced</span></td>
+                                    <td>2+ Years</td>
+                                    <td>Production Databases, Complex Queries</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>MySQL</strong></td>
+                                    <td><span class="level-badge intermediate">Intermediate</span></td>
+                                    <td>1-2 Years</td>
+                                    <td>Web Applications, Data Management</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>SQLAlchemy</strong></td>
+                                    <td><span class="level-badge advanced">Advanced</span></td>
+                                    <td>2+ Years</td>
+                                    <td>ORM, Database Abstraction</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Redis</strong></td>
+                                    <td><span class="level-badge intermediate">Intermediate</span></td>
+                                    <td>1+ Year</td>
+                                    <td>Caching, Message Queuing</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Docker</strong></td>
+                                    <td><span class="level-badge intermediate">Intermediate</span></td>
+                                    <td>1+ Year</td>
+                                    <td>Containerization, Deployment</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Git & GitHub</strong></td>
+                                    <td><span class="level-badge advanced">Advanced</span></td>
+                                    <td>3+ Years</td>
+                                    <td>Version Control, Collaboration</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>REST API Design</strong></td>
+                                    <td><span class="level-badge advanced">Advanced</span></td>
+                                    <td>2+ Years</td>
+                                    <td>API Architecture, Web Services</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>JWT Authentication</strong></td>
+                                    <td><span class="level-badge advanced">Advanced</span></td>
+                                    <td>2+ Years</td>
+                                    <td>Secure Authentication, Authorization</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Call to Action -->
+                <section class="cta-section">
+                    <h2>Ready to Leverage These Skills?</h2>
+                    <p>These technical capabilities are proven through real-world projects and continuous learning. Whether you need backend architecture consulting, API development, or full-stack solutions, I'm ready to contribute to your success.</p>
+                    <ul class="actions special">
+                        <li><a href="generic.html" class="button primary large">View My Projects</a></li>
+                        <li><a href="index.html#contact" class="button large">Get In Touch</a></li>
                     </ul>
-                </nav>
-            </header>
-
-        <!-- Wrapper -->
-            <div id="wrapper">
-
-                <!-- Main -->
-                    <section id="main" class="wrapper">
-                        <div class="inner">
-                            <h1 class="major">Technical Skills</h1>
-                            <p>Here's a breakdown of my technical skills in backend development, database management, and deployment. These reflect the tools and frameworks I've used in my projects and am continuing to deepen my expertise in.</p>
-
-                            <!-- Python Frameworks -->
-                                <section>
-                                    <h2>Python Frameworks</h2>
-                                    <div class="features">
-                                        <section>
-                                            <h3><span class="icon brands fa-python"></span>Django</h3>
-                                            <p>Full-stack web framework with ORM, admin interface, and built-in security features. Experienced in building complex, database-driven applications.</p>
-                                        </section>
-                                        <section>
-                                            <h3>Flask</h3>
-                                            <p>Lightweight micro-framework perfect for APIs and smaller applications. Experience with extensions for authentication, database integration, and more.</p>
-                                        </section>
-                                        <section>
-                                            <h3>FastAPI</h3>
-                                            <p>Modern, fast web framework with automatic API documentation. Excellent for building high-performance APIs with type hints and async support.</p>
-                                        </section>
-                                    </div>
-                                </section>
-
-                            <!-- Database Technologies -->
-                                <section>
-                                    <h2>Database Technologies</h2>
-                                    <div class="features">
-                                        <section>
-                                            <h3>PostgreSQL</h3>
-                                            <p>Relational database management with experience in complex queries, indexing, and performance optimization.</p>
-                                        </section>
-                                        <section>
-                                            <h3>MySQL</h3>
-                                            <p>Experience with MySQL for web applications, including replication and optimization techniques.</p>
-                                        </section>
-                                        <section>
-                                            <h3>SQLite</h3>
-                                            <p>SQLite database experience for flexible, scalable data storage solutions.</p>
-                                        </section>
-                                        <section>
-                                            <h3>Redis</h3>
-                                            <p>In-memory data structure store for caching, session storage, and real-time applications.</p>
-                                        </section>
-                                    </div>
-                                </section>
-
-                            <!-- API & Security -->
-                                <section>
-                                    <h2>API & Security</h2>
-                                    <div class="features">
-                                        <section>
-                                            <h3>RESTful APIs</h3>
-                                            <p>Design and implementation of RESTful web services with proper HTTP status codes and error handling.</p>
-                                        </section>
-                                        <section>
-                                            <h3>Authentication</h3>
-                                            <p>JWT, OAuth2, and custom authentication systems with security best practices.</p>
-                                        </section>
-                                        <section>
-                                            <h3>API Documentation</h3>
-                                            <p>Swagger/OpenAPI documentation for clear API interfaces and developer experience.</p>
-                                        </section>
-                                    </div>
-                                </section>
-
-                            <!-- DevOps & Tools -->
-                                <section>
-                                    <h2>DevOps & Tools</h2>
-                                    <div class="features">
-                                        <section>
-                                            <h3>Docker</h3>
-                                            <p>Containerization for consistent development and deployment environments.</p>
-                                        </section>
-                                        <section>
-                                            <h3>Git</h3>
-                                            <p>Version control with Git, experienced in branching, merging, and collaborative workflows using GitHub.</p>
-                                        </section>
-                                        <section>
-                                            <h3>Celery</h3>
-                                            <p>Asynchronous task queue for background job processing.</p>
-                                        </section>
-                                        <section>
-                                            <h3>Testing</h3>
-                                            <p>Unit testing, integration testing, and test-driven development with pytest.</p>
-                                        </section>
-                                    </div>
-                                </section>
-
-                            <!-- Experience Levels -->
-                                <section>
-                                    <h2>Experience Level</h2>
-                                    <div class="table-wrapper">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>Technology</th>
-                                                    <th>Experience Level</th>
-                                                    <th>Years</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Python</td>
-                                                    <td>Advanced</td>
-                                                    <td>2+</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Django</td>
-                                                    <td>Intermediate</td>
-                                                    <td>1-2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>FastAPI</td>
-                                                    <td>Intermediate</td>
-                                                    <td>1+</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PostgreSQL</td>
-                                                    <td>Advanced</td>
-                                                    <td>1-2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Flask</td>
-                                                    <td>Advanced</td>
-                                                    <td>2+</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Docker</td>
-                                                    <td>Intermediate</td>
-                                                    <td>1+</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </section>
-
-                        </div>
-                    </section>
+                </section>
 
             </div>
+        </section>
 
-        <!-- Footer -->
-            <footer id="footer" class="wrapper alt">
-                <div class="inner">
-                    <ul class="menu">
-                        <li>&copy; Jeremy's Backend Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                    </ul>
-                </div>
-            </footer>
+    </div>
 
-        <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; 2025 Jeremy Yerimah. All rights reserved.</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generic.html">Projects</a></li>
+            </ul>
+        </div>
+    </footer>
 
-    </body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>

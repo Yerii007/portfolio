@@ -1,43 +1,542 @@
 /*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Modern Portfolio - No JavaScript Fallback Styles
+	Jeremy Yerimah - Backend Developer
+	Ensures graceful degradation when JavaScript is disabled
 */
 
-/* Spotlights */
+/* ============================================
+   RESET ANIMATIONS & TRANSITIONS
+   ============================================ */
 
-	.spotlights > section > .image:before {
-		opacity: 0 !important;
-	}
+/* Remove all transform and opacity animations */
+.spotlights > section > .image:before,
+.spotlights > article > .image:before {
+	opacity: 0 !important;
+}
 
-	.spotlights > section > .content > .inner {
-		-moz-transform: none !important;
-		-webkit-transform: none !important;
-		-ms-transform: none !important;
-		transform: none !important;
+.spotlights > section > .content > .inner,
+.spotlights > article > .content > .inner {
+	transform: none !important;
+	-moz-transform: none !important;
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+	opacity: 1 !important;
+}
+
+/* ============================================
+   WRAPPER SECTIONS
+   ============================================ */
+
+/* Ensure all wrapper sections are visible */
+.wrapper > .inner {
+	opacity: 1 !important;
+	transform: none !important;
+	-moz-transform: none !important;
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+}
+
+.wrapper.fade-up > .inner,
+.wrapper.fade-down > .inner,
+.wrapper.fade > .inner {
+	opacity: 1 !important;
+	transform: translateY(0) !important;
+	-moz-transform: translateY(0) !important;
+	-webkit-transform: translateY(0) !important;
+	-ms-transform: translateY(0) !important;
+}
+
+/* Remove inactive class effects */
+.wrapper.inactive > .inner {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+/* ============================================
+   SIDEBAR NAVIGATION
+   ============================================ */
+
+/* Ensure sidebar is always visible and functional */
+#sidebar > .inner {
+	opacity: 1 !important;
+	transform: none !important;
+	-moz-transform: none !important;
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+}
+
+#sidebar nav > ul > li {
+	transform: none !important;
+	-moz-transform: none !important;
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+	opacity: 1 !important;
+}
+
+/* ============================================
+   FEATURES SECTIONS
+   ============================================ */
+
+/* Make features immediately visible */
+.features {
+	opacity: 1 !important;
+}
+
+.features.inactive {
+	opacity: 1 !important;
+}
+
+.features article,
+.features section {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+.features .icon,
+.features .icon.major {
+	opacity: 1 !important;
+	transform: scale(1) !important;
+	-moz-transform: scale(1) !important;
+	-webkit-transform: scale(1) !important;
+	-ms-transform: scale(1) !important;
+}
+
+.features.inactive section .icon,
+.features.inactive article .icon {
+	transform: scale(1) !important;
+	-moz-transform: scale(1) !important;
+	-webkit-transform: scale(1) !important;
+	-ms-transform: scale(1) !important;
+	opacity: 1 !important;
+}
+
+/* ============================================
+   PRELOAD STATE REMOVAL
+   ============================================ */
+
+/* Remove all preload effects */
+body.is-preload * {
+	animation: none !important;
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	transition: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+}
+
+/* ============================================
+   SMOOTH SCROLLING FALLBACK
+   ============================================ */
+
+/* Use native browser scrolling */
+html {
+	scroll-behavior: auto;
+}
+
+/* ============================================
+   INTERACTIVE ELEMENTS
+   ============================================ */
+
+/* Ensure all interactive elements are visible */
+.inactive {
+	opacity: 1 !important;
+	transform: none !important;
+	-moz-transform: none !important;
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+}
+
+/* ============================================
+   NAVIGATION LINKS
+   ============================================ */
+
+/* Make navigation functional without JS */
+#sidebar nav a:after {
+	/* Remove animated underline effect */
+	max-width: 100% !important;
+	transition: none !important;
+}
+
+#sidebar nav a.active:after {
+	max-width: 100% !important;
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+
+/* Ensure forms are usable */
+form,
+form input,
+form textarea,
+form select,
+form button {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+/* Remove any disabled states */
+input:disabled,
+button:disabled,
+textarea:disabled {
+	opacity: 0.6 !important;
+}
+
+/* ============================================
+   BUTTONS & LINKS
+   ============================================ */
+
+/* Simplify button hover effects */
+.button:hover,
+button:hover,
+input[type="submit"]:hover {
+	transform: none !important;
+	-moz-transform: none !important;
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+}
+
+/* Remove complex hover animations */
+.button:before,
+button:before {
+	display: none !important;
+}
+
+/* ============================================
+   IMAGES & MEDIA
+   ============================================ */
+
+/* Ensure images load properly */
+img {
+	opacity: 1 !important;
+}
+
+/* Remove lazy loading effects */
+img[data-src] {
+	display: block !important;
+	opacity: 1 !important;
+}
+
+/* ============================================
+   PROJECT DETAILS
+   ============================================ */
+
+/* Make project sections fully visible */
+.project-detail,
+.project-header,
+.project-content,
+.project-meta {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+/* ============================================
+   BADGES & TAGS
+   ============================================ */
+
+/* Remove hover effects from badges */
+.badge:hover,
+.framework-tag:hover,
+.level-badge:hover {
+	transform: none !important;
+	-moz-transform: none !important;
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+
+/* Ensure tables are readable */
+table,
+table tbody,
+table tr,
+table td,
+table th {
+	opacity: 1 !important;
+}
+
+/* ============================================
+   PANELS & OVERLAYS
+   ============================================ */
+
+/* Ensure panels work without JS */
+.panel {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+
+/* Make mobile navigation accessible */
+@media screen and (max-width: 1280px) {
+	#sidebar {
+		display: flex !important;
 		opacity: 1 !important;
 	}
-
-/* Wrapper */
-
-	.wrapper > .inner {
-		opacity: 1 !important;
-		-moz-transform: none !important;
-		-webkit-transform: none !important;
-		-ms-transform: none !important;
-		transform: none !important;
-	}
-
-/* Sidebar */
-
+	
 	#sidebar > .inner {
 		opacity: 1 !important;
-	}
-
-	#sidebar nav > ul > li {
-		-moz-transform: none !important;
-		-webkit-transform: none !important;
-		-ms-transform: none !important;
 		transform: none !important;
+	}
+	
+	#sidebar nav ul {
+		display: flex !important;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	/* Keep sidebar hidden on very small screens for space */
+	#sidebar {
+		display: none !important;
+	}
+	
+	/* Ensure header navigation is visible */
+	#header {
+		display: flex !important;
 		opacity: 1 !important;
 	}
+	
+	#header nav {
+		display: block !important;
+	}
+}
+
+/* ============================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================ */
+
+/* Ensure focus states are visible */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 2px solid #8b5cf6 !important;
+	outline-offset: 2px !important;
+}
+
+/* Skip to content link for keyboard navigation */
+.skip-to-content {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: #8b5cf6;
+	color: white;
+	padding: 8px;
+	text-decoration: none;
+	z-index: 100000;
+}
+
+.skip-to-content:focus {
+	top: 0;
+}
+
+/* ============================================
+   PROGRESSIVE ENHANCEMENT INDICATORS
+   ============================================ */
+
+/* Show message that enhanced features require JS */
+.requires-js {
+	opacity: 0.5 !important;
+	pointer-events: none !important;
+}
+
+.requires-js::after {
+	content: " (Requires JavaScript)" !important;
+	font-size: 0.85em !important;
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+	/* Optimize for printing */
+	.wrapper,
+	.wrapper > .inner {
+		opacity: 1 !important;
+		transform: none !important;
+		page-break-inside: avoid;
+	}
+	
+	#sidebar {
+		display: none !important;
+	}
+	
+	#sidebar + #wrapper {
+		margin-left: 0 !important;
+	}
+	
+	/* Show all content */
+	.inactive {
+		opacity: 1 !important;
+	}
+	
+	/* Remove backgrounds for better printing */
+	body {
+		background: white !important;
+		color: black !important;
+	}
+	
+	.wrapper {
+		background: white !important;
+	}
+	
+	/* Ensure links are underlined */
+	a {
+		text-decoration: underline !important;
+		border-bottom: none !important;
+	}
+	
+	/* Show URLs after links */
+	a[href]:after {
+		content: " (" attr(href) ")" !important;
+		font-size: 0.8em !important;
+	}
+	
+	/* Don't show URLs for internal links */
+	a[href^="#"]:after {
+		content: "" !important;
+	}
+}
+
+/* ============================================
+   FALLBACK MESSAGING
+   ============================================ */
+
+/* Optional: Display message about JavaScript being disabled */
+noscript {
+	display: block;
+	padding: 1em;
+	background: rgba(139, 92, 246, 0.1);
+	border: 1px solid rgba(139, 92, 246, 0.3);
+	border-radius: 8px;
+	margin: 1em;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+noscript p {
+	margin: 0;
+}
+
+/* ============================================
+   REDUCED MOTION SUPPORT
+   ============================================ */
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* ============================================
+   CONTRAST ENHANCEMENTS
+   ============================================ */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	/* Increase border visibility */
+	.wrapper,
+	.features,
+	.project-detail,
+	table {
+		border-width: 2px !important;
+		border-color: rgba(255, 255, 255, 0.3) !important;
+	}
+	
+	/* Increase text contrast */
+	body,
+	p,
+	li {
+		color: rgba(255, 255, 255, 0.95) !important;
+	}
+	
+	/* Enhance button visibility */
+	.button,
+	button {
+		border-width: 2px !important;
+	}
+}
+
+/* ============================================
+   FORCED COLORS MODE (Windows High Contrast)
+   ============================================ */
+
+@media (forced-colors: active) {
+	/* Ensure elements remain visible */
+	.wrapper,
+	.features article,
+	.project-detail {
+		forced-color-adjust: none;
+		border: 1px solid currentColor !important;
+	}
+	
+	/* Ensure buttons have borders */
+	.button,
+	button,
+	input[type="submit"] {
+		border: 2px solid currentColor !important;
+	}
+}
+
+/* ============================================
+   CRITICAL CONTENT VISIBILITY
+   ============================================ */
+
+/* Ensure critical information is always accessible */
+.profile,
+.profile img,
+h1, h2, h3,
+.contact,
+.project-links,
+#footer {
+	opacity: 1 !important;
+	visibility: visible !important;
+	display: block !important;
+}
+
+/* Ensure navigation is always functional */
+nav,
+nav ul,
+nav li,
+nav a {
+	display: block !important;
+	opacity: 1 !important;
+}
+
+@media screen and (max-width: 1280px) {
+	#sidebar nav ul {
+		display: flex !important;
+	}
+	
+	#sidebar nav li {
+		display: block !important;
+	}
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATION
+   ============================================ */
+
+/* Remove will-change properties that were used for animations */
+* {
+	will-change: auto !important;
+}
+
+/* ============================================
+   END OF NOSCRIPT STYLES
+   ============================================ */

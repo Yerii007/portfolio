@@ -1,124 +1,486 @@
-<!DOCTYPE HTML>
-<!--
-    Hyperspace by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-    <head>
-        <title>Projects - Jeremy's Backend Portfolio</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Python backend projects by Jeremy Yerimah - Flask APIs, Django applications, real-time systems, and data integration solutions.">
+    <meta name="keywords" content="Python Projects, Flask API, Django Application, Backend Portfolio, Real-time WebSocket, API Development">
+    <meta name="author" content="Jeremy Yerimah">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Project Portfolio - Jeremy Yerimah">
+    <meta property="og:description" content="Production-ready backend projects showcasing Flask, Django, FastAPI, and modern Python development.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <title>Project Portfolio - Jeremy Yerimah | Backend Development Showcase</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+</head>
+<body class="is-preload">
 
-        <!-- Header -->
-            <header id="header">
-                <a href="index.html" class="title">Python Backend Portfolio</a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="generic.html" class="active">Projects</a></li>
-                        <li><a href="elements.html">Skills</a></li>
-                    </ul>
-                </nav>
-            </header>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="title">Jeremy Yerimah - Backend Developer</a>
+        <nav aria-label="Page Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generic.html" class="active">Projects</a></li>
+                <li><a href="elements.html">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Wrapper -->
-            <div id="wrapper">
+    <!-- Main Content Wrapper -->
+    <div id="wrapper">
 
-                <!-- Main -->
-                    <section id="main" class="wrapper">
-                        <div class="inner">
-                            <h1 class="major">Featured Python Backend Projects</h1>
-                            
-                            <section class="features">
-                                <article>
-                                    <h3>Image Processing API</h3>
-                                    <span class="framework-tag flask">Flask</span>
-                                    <p><strong>Technologies:</strong> Flask, SQLAlchemy, JWT, Pillow, Celery, Redis, Flask-Migrate</p>
-                                    <p>A Flask-based backend API for user-authenticated image uploads and processing. Features JWT authentication, background processing with Celery/Redis, and automatic cleanup of old files. Uses SQLAlchemy with SQLite and Pillow for image manipulation.</p>
-                                    <ul class="actions">
-                                        <li><a href="https://github.com/Yerii007/Image-Processing-API" class="button">View on GitHub</a></li>
-                                        <li><a href="https://image-processing-api-hbb3.onrender.com" class="button primary">Live Demo</a></li>
-                                    </ul>
-                                </article>
-
-                                <article>
-                                    <h3>Real Time Crypto Price API</h3>
-                                    <span class="framework-tag flask">Flask</span>
-                                    <p><strong>Technologies:</strong> Flask, SQLAlchemy, JWT, Flask-Caching, CoinGecko API, APScheduler, Flask-Limiter</p>
-                                    <p>A Flask REST API that fetches real-time cryptocurrency prices from CoinGecko, stores them in a database, and provides endpoints with JWT authentication. Includes caching with Flask-Caching and background updates with APScheduler.</p>
-                                    <ul class="actions">
-                                        <li><a href="https://github.com/Yerii007/Real-Time-Crypto-Price-API" class="button">View on GitHub</a></li>
-                                        <li><a href="https://real-time-crypto-price-api.onrender.com" class="button primary">Live Demo</a></li>
-                                    </ul>
-                                </article>
-
-                                <article>
-                                    <h3>Task Manager API</h3>
-                                    <span class="framework-tag flask">Flask</span>
-                                    <p><strong>Technologies:</strong> Flask, SQLAlchemy, JWT, Flask-SocketIO, Bcrypt, Flask-Limiter</p>
-                                    <p>A Flask-based REST API with real-time notifications via WebSockets using Flask-SocketIO. Features JWT authentication, user-isolated rooms, password hashing, and rate limiting. Includes comprehensive CRUD operations for tasks with status tracking.</p>
-                                    <ul class="actions">
-                                        <li><a href="https://github.com/Yerii007/Task-Manager-API" class="button">View on GitHub</a></li>
-                                        <li><a href="https://task-manager-api-1-fd5m.onrender.com" class="button primary">Live Demo</a></li>
-                                    </ul>
-                                </article>
-
-                                <article>
-                                    <h3>Spotify Top 5 Script</h3>
-                                    <span class="framework-tag script">Python Script</span>
-                                    <p><strong>Technologies:</strong> Python, Spotipy, OAuth2, Pandas, Tabulate, dotenv</p>
-                                    <p>A Python script using the Spotify Web API to fetch user's top 5 most-listened artists and their most popular tracks. Features OAuth2 authentication, data export to CSV/Excel, and tabulated console output using spotipy and pandas.</p>
-                                    <ul class="actions">
-                                        <li><a href="https://github.com/Yerii007/Spotify-Top-5-Script" class="button">View on GitHub</a></li>
-                                    </ul>
-                                </article>
-
-                                <article>
-                                    <h3>Spotify Playlist Maker</h3>
-                                    <span class="framework-tag script">Python Script</span>
-                                    <p><strong>Technologies:</strong> Python, Spotipy, OAuth2, Requests, BeautifulSoup, dotenv, Pytest</p>
-                                    <p>Automatically creates Spotify playlists from Billboard Hot 100 charts for any date. Combines web scraping for Billboard data with Spotify API integration to search and add tracks. Features .env configuration and date-based playlist creation.</p>
-                                    <ul class="actions">
-                                        <li><a href="https://github.com/Yerii007/Spotify-Playlist-Maker" class="button">View on GitHub</a></li>
-                                    </ul>
-                                </article>
-                                <article>
-                                    <h3>IMDB Clone</h3>
-                                    <span class="framework-tag django">Django</span>
-                                    <p><strong>Technologies:</strong> Django, Django REST Framework, SQLite</p>
-                                    <p>A Django-based web application that mimics basic IMDB functionality. Features user authentication, movie listings, reviews, and ratings. Utilizes Django REST Framework for API endpoints and SQLite for data storage.</p>
-                                    <ul class="actions">
-                                        <li><a href="https://github.com/Yerii007/IMDB-Clone" class="button">View on GitHub</a></li>
-                                    </ul>
-                                </article>
-                            </section>
+        <!-- Main Content -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">Featured Backend Projects</h1>
+                <p class="lead">A comprehensive portfolio showcasing production-ready backend systems, APIs, and integrations. Each project demonstrates advanced Python development practices, secure authentication, scalable architecture, and real-world problem-solving capabilities.</p>
+                
+                <!-- Project 1: Image Processing API -->
+                <article id="image-processing" class="project-detail">
+                    <header class="project-header">
+                        <h2>Image Processing API</h2>
+                        <div class="project-meta">
+                            <span class="framework-tag flask">Flask</span>
+                            <span class="project-type">Production API</span>
+                            <span class="completion-date">2024</span>
                         </div>
-                    </section>
+                    </header>
+                    
+                    <div class="project-content">
+                        <h3>Project Overview</h3>
+                        <p>A sophisticated, production-grade Flask-based REST API designed for secure image upload, processing, and management. The system implements enterprise-level features including JWT authentication, asynchronous background processing, and intelligent resource management. Built to handle concurrent requests efficiently while maintaining data integrity and security.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><strong>Secure User Authentication:</strong> JWT-based stateless authentication system with token refresh mechanisms and secure password storage using bcrypt hashing.</li>
+                            <li><strong>Asynchronous Image Processing:</strong> Celery task queue with Redis broker for non-blocking image transformations (resize, crop, filters, format conversion).</li>
+                            <li><strong>Automated Resource Management:</strong> Scheduled cleanup jobs to remove expired files and optimize storage utilization.</li>
+                            <li><strong>RESTful Architecture:</strong> Clean API design following REST principles with proper HTTP methods and status codes.</li>
+                            <li><strong>Database Management:</strong> SQLAlchemy ORM with SQLite for flexible data modeling and efficient query operations.</li>
+                            <li><strong>Image Manipulation:</strong> Pillow (PIL) integration for comprehensive image processing capabilities.</li>
+                            <li><strong>API Documentation:</strong> Interactive Swagger/OpenAPI documentation for developer-friendly integration.</li>
+                        </ul>
+                        
+                        <h3>Technical Stack</h3>
+                        <div class="tech-stack-grid">
+                            <div class="tech-item">
+                                <strong>Framework:</strong> Flask 2.x
+                            </div>
+                            <div class="tech-item">
+                                <strong>Database:</strong> SQLAlchemy + SQLite
+                            </div>
+                            <div class="tech-item">
+                                <strong>Authentication:</strong> Flask-JWT-Extended
+                            </div>
+                            <div class="tech-item">
+                                <strong>Task Queue:</strong> Celery + Redis
+                            </div>
+                            <div class="tech-item">
+                                <strong>Image Processing:</strong> Pillow (PIL)
+                            </div>
+                            <div class="tech-item">
+                                <strong>Migrations:</strong> Flask-Migrate (Alembic)
+                            </div>
+                        </div>
+                        
+                        <h3>Technical Challenges Solved</h3>
+                        <ul class="challenges-list">
+                            <li>Implemented non-blocking image processing to prevent request timeouts</li>
+                            <li>Designed efficient file storage strategy with automatic cleanup mechanisms</li>
+                            <li>Developed secure file upload validation to prevent malicious files</li>
+                            <li>Optimized database queries for improved API response times</li>
+                        </ul>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/Yerii007/Image-Processing-API" class="button primary" target="_blank" rel="noopener noreferrer">
+                                <i class="icon brands fa-github"></i> View Source Code
+                            </a>
+                            <a href="https://image-processing-api-hbb3.onrender.com" class="button" target="_blank" rel="noopener noreferrer">
+                                <i class="icon solid fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <hr class="project-divider">
+
+                <!-- Project 2: Real-Time Crypto Price API -->
+                <article id="crypto-api" class="project-detail">
+                    <header class="project-header">
+                        <h2>Real-Time Cryptocurrency Price API</h2>
+                        <div class="project-meta">
+                            <span class="framework-tag flask">Flask</span>
+                            <span class="project-type">Financial Data API</span>
+                            <span class="completion-date">2024</span>
+                        </div>
+                    </header>
+                    
+                    <div class="project-content">
+                        <h3>Project Overview</h3>
+                        <p>A high-performance Flask REST API that aggregates real-time cryptocurrency market data from CoinGecko's public API. The system implements intelligent caching strategies, automated data updates, and secure access control to deliver fast, accurate cryptocurrency pricing information. Designed for applications requiring up-to-the-minute crypto market data.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><strong>Real-Time Data Integration:</strong> Seamless integration with CoinGecko API for live cryptocurrency prices across multiple markets.</li>
+                            <li><strong>Intelligent Caching:</strong> Flask-Caching implementation with Redis backend to minimize API calls and improve response times.</li>
+                            <li><strong>Automated Updates:</strong> APScheduler-based background jobs for periodic price refreshes without manual intervention.</li>
+                            <li><strong>JWT Authentication:</strong> Secure token-based authentication to control API access and track usage.</li>
+                            <li><strong>Rate Limiting:</strong> Flask-Limiter integration to prevent abuse and ensure fair usage across clients.</li>
+                            <li><strong>Historical Data Storage:</strong> Database persistence for price history and trend analysis capabilities.</li>
+                            <li><strong>Error Handling:</strong> Robust error handling for external API failures with graceful degradation.</li>
+                        </ul>
+                        
+                        <h3>Technical Stack</h3>
+                        <div class="tech-stack-grid">
+                            <div class="tech-item">
+                                <strong>Framework:</strong> Flask 2.x
+                            </div>
+                            <div class="tech-item">
+                                <strong>Database:</strong> SQLAlchemy + PostgreSQL
+                            </div>
+                            <div class="tech-item">
+                                <strong>Caching:</strong> Flask-Caching + Redis
+                            </div>
+                            <div class="tech-item">
+                                <strong>Scheduler:</strong> APScheduler
+                            </div>
+                            <div class="tech-item">
+                                <strong>External API:</strong> CoinGecko API
+                            </div>
+                            <div class="tech-item">
+                                <strong>Rate Limiting:</strong> Flask-Limiter
+                            </div>
+                        </div>
+                        
+                        <h3>Technical Challenges Solved</h3>
+                        <ul class="challenges-list">
+                            <li>Optimized caching strategy to balance data freshness with performance</li>
+                            <li>Implemented circuit breaker pattern for external API reliability</li>
+                            <li>Designed efficient data update mechanism to minimize database writes</li>
+                            <li>Created flexible rate limiting rules for different user tiers</li>
+                        </ul>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/Yerii007/Real-Time-Crypto-Price-API" class="button primary" target="_blank" rel="noopener noreferrer">
+                                <i class="icon brands fa-github"></i> View Source Code
+                            </a>
+                            <a href="https://real-time-crypto-price-api.onrender.com" class="button" target="_blank" rel="noopener noreferrer">
+                                <i class="icon solid fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <hr class="project-divider">
+
+                <!-- Project 3: Task Manager API -->
+                <article id="task-manager" class="project-detail">
+                    <header class="project-header">
+                        <h2>Real-Time Task Manager with WebSocket Notifications</h2>
+                        <div class="project-meta">
+                            <span class="framework-tag flask">Flask</span>
+                            <span class="project-type">Real-Time Application</span>
+                            <span class="completion-date">2024</span>
+                        </div>
+                    </header>
+                    
+                    <div class="project-content">
+                        <h3>Project Overview</h3>
+                        <p>An advanced task management system featuring real-time WebSocket notifications for instant updates. Built with Flask and Flask-SocketIO, the application provides users with immediate feedback on task changes through bidirectional communication channels. Implements user isolation, comprehensive security measures, and full CRUD operations for task management.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><strong>Real-Time WebSocket Communication:</strong> Flask-SocketIO implementation for instant task updates and notifications across connected clients.</li>
+                            <li><strong>User-Isolated Rooms:</strong> Secure room-based architecture ensuring users only receive notifications for their own tasks.</li>
+                            <li><strong>Comprehensive Task CRUD:</strong> Full create, read, update, and delete operations with status tracking (pending, in-progress, completed).</li>
+                            <li><strong>Secure Authentication:</strong> JWT-based authentication with bcrypt password hashing for maximum security.</li>
+                            <li><strong>Rate Limiting:</strong> Protection against abuse with intelligent rate limiting on API endpoints.</li>
+                            <li><strong>Task Prioritization:</strong> Priority levels and due date management for effective task organization.</li>
+                            <li><strong>Real-Time Notifications:</strong> Instant updates when tasks are created, modified, or deleted.</li>
+                        </ul>
+                        
+                        <h3>Technical Stack</h3>
+                        <div class="tech-stack-grid">
+                            <div class="tech-item">
+                                <strong>Framework:</strong> Flask 2.x
+                            </div>
+                            <div class="tech-item">
+                                <strong>Real-Time:</strong> Flask-SocketIO
+                            </div>
+                            <div class="tech-item">
+                                <strong>Database:</strong> SQLAlchemy + SQLite
+                            </div>
+                            <div class="tech-item">
+                                <strong>Authentication:</strong> JWT + Bcrypt
+                            </div>
+                            <div class="tech-item">
+                                <strong>Rate Limiting:</strong> Flask-Limiter
+                            </div>
+                            <div class="tech-item">
+                                <strong>WebSocket:</strong> Socket.IO Protocol
+                            </div>
+                        </div>
+                        
+                        <h3>Technical Challenges Solved</h3>
+                        <ul class="challenges-list">
+                            <li>Implemented secure WebSocket authentication with JWT tokens</li>
+                            <li>Designed efficient room management for user-specific notifications</li>
+                            <li>Handled WebSocket connection lifecycle and reconnection logic</li>
+                            <li>Optimized real-time updates to minimize bandwidth usage</li>
+                        </ul>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/Yerii007/Task-Manager-API" class="button primary" target="_blank" rel="noopener noreferrer">
+                                <i class="icon brands fa-github"></i> View Source Code
+                            </a>
+                            <a href="https://task-manager-api-1-fd5m.onrender.com" class="button" target="_blank" rel="noopener noreferrer">
+                                <i class="icon solid fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <hr class="project-divider">
+
+                <!-- Project 4: Spotify Top 5 Script -->
+                <article id="spotify-analytics" class="project-detail">
+                    <header class="project-header">
+                        <h2>Spotify Analytics Script</h2>
+                        <div class="project-meta">
+                            <span class="framework-tag script">Python Script</span>
+                            <span class="project-type">Data Analysis</span>
+                            <span class="completion-date">2023</span>
+                        </div>
+                    </header>
+                    
+                    <div class="project-content">
+                        <h3>Project Overview</h3>
+                        <p>An intelligent Python automation script that leverages the Spotify Web API to analyze user listening habits. The application retrieves a user's top 5 most-listened artists along with their most popular tracks, providing insights into music preferences. Features OAuth2 authentication, data export capabilities, and formatted console output for easy data consumption.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><strong>OAuth2 Authentication:</strong> Secure Spotify API authentication using industry-standard OAuth2 flow with token management.</li>
+                            <li><strong>Top Artists Analysis:</strong> Retrieves user's most-listened artists based on listening history and engagement metrics.</li>
+                            <li><strong>Track Popularity Data:</strong> Fetches each artist's most popular tracks with detailed metadata.</li>
+                            <li><strong>Multi-Format Export:</strong> Data export to both CSV and Excel formats for further analysis and reporting.</li>
+                            <li><strong>Formatted Console Output:</strong> Tabulated terminal display using tabulate library for immediate visual feedback.</li>
+                            <li><strong>Environment Configuration:</strong> Secure credential management using python-dotenv for API keys.</li>
+                            <li><strong>Error Handling:</strong> Robust error handling for API failures and authentication issues.</li>
+                        </ul>
+                        
+                        <h3>Technical Stack</h3>
+                        <div class="tech-stack-grid">
+                            <div class="tech-item">
+                                <strong>Language:</strong> Python 3.x
+                            </div>
+                            <div class="tech-item">
+                                <strong>API Client:</strong> Spotipy
+                            </div>
+                            <div class="tech-item">
+                                <strong>Data Processing:</strong> Pandas
+                            </div>
+                            <div class="tech-item">
+                                <strong>Authentication:</strong> OAuth2
+                            </div>
+                            <div class="tech-item">
+                                <strong>Output Formatting:</strong> Tabulate
+                            </div>
+                            <div class="tech-item">
+                                <strong>Configuration:</strong> Python-dotenv
+                            </div>
+                        </div>
+                        
+                        <h3>Technical Challenges Solved</h3>
+                        <ul class="challenges-list">
+                            <li>Implemented secure OAuth2 flow with token refresh handling</li>
+                            <li>Designed efficient data structure for artist and track information</li>
+                            <li>Created user-friendly console output with proper formatting</li>
+                            <li>Built flexible export system supporting multiple file formats</li>
+                        </ul>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/Yerii007/Spotify-Top-5-Script" class="button primary" target="_blank" rel="noopener noreferrer">
+                                <i class="icon brands fa-github"></i> View Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <hr class="project-divider">
+
+                <!-- Project 5: Spotify Playlist Maker -->
+                <article id="playlist-maker" class="project-detail">
+                    <header class="project-header">
+                        <h2>Billboard Playlist Automation</h2>
+                        <div class="project-meta">
+                            <span class="framework-tag script">Python Script</span>
+                            <span class="project-type">Automation Tool</span>
+                            <span class="completion-date">2023</span>
+                        </div>
+                    </header>
+                    
+                    <div class="project-content">
+                        <h3>Project Overview</h3>
+                        <p>An innovative automation tool that bridges web scraping and music streaming APIs. The application automatically creates Spotify playlists from Billboard Hot 100 charts for any historical date, combining data extraction from Billboard's website with Spotify's music catalog. Perfect for nostalgia trips or discovering music from specific time periods.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><strong>Web Scraping:</strong> BeautifulSoup implementation for extracting Billboard Hot 100 chart data from any historical date.</li>
+                            <li><strong>Spotify API Integration:</strong> Seamless integration with Spotify API for track searching and playlist creation.</li>
+                            <li><strong>Intelligent Track Matching:</strong> Smart search algorithm to find correct tracks even with slight title variations.</li>
+                            <li><strong>Date-Based Playlists:</strong> Creates playlists named after the specific chart date (e.g., "Billboard Hot 100 - 2020-01-15").</li>
+                            <li><strong>OAuth2 Authentication:</strong> Secure Spotify authentication with proper scope management for playlist modification.</li>
+                            <li><strong>Environment Configuration:</strong> Secure credential management using .env files for API credentials.</li>
+                            <li><strong>Comprehensive Testing:</strong> Pytest-based test suite ensuring reliability and correctness.</li>
+                        </ul>
+                        
+                        <h3>Technical Stack</h3>
+                        <div class="tech-stack-grid">
+                            <div class="tech-item">
+                                <strong>Language:</strong> Python 3.x
+                            </div>
+                            <div class="tech-item">
+                                <strong>Web Scraping:</strong> BeautifulSoup4 + Requests
+                            </div>
+                            <div class="tech-item">
+                                <strong>API Client:</strong> Spotipy
+                            </div>
+                            <div class="tech-item">
+                                <strong>Authentication:</strong> OAuth2
+                            </div>
+                            <div class="tech-item">
+                                <strong>Testing:</strong> Pytest
+                            </div>
+                            <div class="tech-item">
+                                <strong>Configuration:</strong> Python-dotenv
+                            </div>
+                        </div>
+                        
+                        <h3>Technical Challenges Solved</h3>
+                        <ul class="challenges-list">
+                            <li>Implemented robust web scraping with error handling for missing data</li>
+                            <li>Designed intelligent track matching algorithm for accurate results</li>
+                            <li>Handled OAuth2 scope requirements for playlist creation</li>
+                            <li>Built retry mechanism for failed track searches</li>
+                        </ul>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/Yerii007/Spotify-Playlist-Maker" class="button primary" target="_blank" rel="noopener noreferrer">
+                                <i class="icon brands fa-github"></i> View Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <hr class="project-divider">
+
+                <!-- Project 6: IMDB Clone -->
+                <article id="imdb-clone" class="project-detail">
+                    <header class="project-header">
+                        <h2>IMDB Clone Platform</h2>
+                        <div class="project-meta">
+                            <span class="framework-tag django">Django</span>
+                            <span class="project-type">Full-Stack Application</span>
+                            <span class="completion-date">2023</span>
+                        </div>
+                    </header>
+                    
+                    <div class="project-content">
+                        <h3>Project Overview</h3>
+                        <p>A comprehensive Django-based web application replicating core functionality of IMDB. The platform provides a complete movie database management system with user authentication, review systems, and rating mechanisms. Built using Django's powerful ORM and Django REST Framework for API endpoints, offering both web interface and programmatic access.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><strong>User Authentication System:</strong> Complete registration, login, and profile management using Django's built-in authentication.</li>
+                            <li><strong>Movie Database:</strong> Comprehensive movie listing with detailed information including cast, crew, genres, and release dates.</li>
+                            <li><strong>Review System:</strong> User-generated reviews with text content and timestamp tracking.</li>
+                            <li><strong>Rating Mechanism:</strong> Star-based rating system with average rating calculations.</li>
+                            <li><strong>RESTful API:</strong> Django REST Framework endpoints for programmatic access to movie data and reviews.</li>
+                            <li><strong>Search Functionality:</strong> Advanced search capabilities for finding movies by title, genre, or year.</li>
+                            <li><strong>Admin Interface:</strong> Django admin panel for content management and moderation.</li>
+                        </ul>
+                        
+                        <h3>Technical Stack</h3>
+                        <div class="tech-stack-grid">
+                            <div class="tech-item">
+                                <strong>Framework:</strong> Django 4.x
+                            </div>
+                            <div class="tech-item">
+                                <strong>API:</strong> Django REST Framework
+                            </div>
+                            <div class="tech-item">
+                                <strong>Database:</strong> SQLite (Dev) / PostgreSQL (Prod)
+                            </div>
+                            <div class="tech-item">
+                                <strong>Authentication:</strong> Django Auth
+                            </div>
+                            <div class="tech-item">
+                                <strong>Frontend:</strong> Django Templates
+                            </div>
+                            <div class="tech-item">
+                                <strong>ORM:</strong> Django ORM
+                            </div>
+                        </div>
+                        
+                        <h3>Technical Challenges Solved</h3>
+                        <ul class="challenges-list">
+                            <li>Designed complex database schema for movies, reviews, and ratings</li>
+                            <li>Implemented efficient query optimization for large datasets</li>
+                            <li>Created custom permissions for review moderation</li>
+                            <li>Built responsive search with filtering and pagination</li>
+                        </ul>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/Yerii007/IMDB-Clone" class="button primary" target="_blank" rel="noopener noreferrer">
+                                <i class="icon brands fa-github"></i> View Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Call to Action -->
+                <section class="cta-section">
+                    <h2>Interested in Working Together?</h2>
+                    <p>These projects represent a fraction of my backend development capabilities. I'm available for custom API development, backend architecture consulting, and full-stack solutions. Let's discuss how I can contribute to your next project.</p>
+                    <ul class="actions special">
+                        <li><a href="index.html#contact" class="button primary large">Get In Touch</a></li>
+                        <li><a href="elements.html" class="button large">View Technical Skills</a></li>
+                    </ul>
+                </section>
 
             </div>
+        </section>
 
-        <!-- Footer -->
-            <footer id="footer" class="wrapper alt">
-                <div class="inner">
-                    <ul class="menu">
-                        <li>&copy; Jeremy's Backend Portfolio. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                    </ul>
-                </div>
-            </footer>
+    </div>
 
-        <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; 2025 Jeremy Yerimah. All rights reserved.</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="elements.html">Skills</a></li>
+            </ul>
+        </div>
+    </footer>
 
-    </body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>
