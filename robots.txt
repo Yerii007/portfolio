@@ -1,0 +1,122 @@
+# robots.txt for Jeremy Yerimah's Portfolio
+# Backend Developer Portfolio Website
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow access to specific directories/files
+# (Uncomment if you have these directories)
+# Disallow: /assets/
+# Disallow: /temp/
+# Disallow: /private/
+# Disallow: /*.json$
+
+# Prevent crawling of duplicate content
+# Disallow: /index.html
+# Allow: /
+
+# Prevent crawling of development/test files
+Disallow: /test/
+Disallow: /dev/
+Disallow: *.bak$
+Disallow: *.tmp$
+Disallow: *~$
+
+# Prevent crawling of WordPress/CMS files (if applicable)
+# Disallow: /wp-admin/
+# Disallow: /wp-includes/
+# Disallow: /wp-content/plugins/
+# Disallow: /wp-content/themes/
+
+# Allow CSS and JS files for proper rendering
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: *.css$
+Allow: *.js$
+
+# Allow images
+Allow: /images/
+Allow: *.jpg$
+Allow: *.jpeg$
+Allow: *.png$
+Allow: *.gif$
+Allow: *.svg$
+Allow: *.webp$
+
+# Crawl delay (optional - be respectful to server)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://yourwebsite.com/sitemap.xml
+
+# Additional sitemaps (if you have multiple)
+# Sitemap: https://yourwebsite.com/sitemap-projects.xml
+# Sitemap: https://yourwebsite.com/sitemap-blog.xml
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
+
+# Block scrapers and spam bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SiteBot
+Disallow: /
+
+User-agent: BackWeb
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+# Social media bots (allow for proper link previews)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+# Note: Replace 'yourwebsite.com' with your actual domain name
+# Update sitemap URL when deploying to production
